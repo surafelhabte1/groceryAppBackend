@@ -28,7 +28,7 @@ routes.use(userRoute);
 
 app.use("/", routes);
 
-productRoute.get("/lala", async (req: Request, res: Response) => {
+productRoute.get("/kaka", async (req: Request, res: Response) => {
   res.status(200).json({
     venderID: "121",
     title: "Pineapple",
