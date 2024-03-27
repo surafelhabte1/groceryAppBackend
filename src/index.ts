@@ -28,4 +28,17 @@ routes.use(userRoute);
 
 app.use("/", routes);
 
+productRoute.get("/lala", async (req: Request, res: Response) => {
+  res.status(200).json({
+    venderID: "121",
+    title: "Pineapple",
+    category: "Fruit",
+    description: "This is pineapple description",
+    caloriesAmount: 40,
+    unitOfMeasurment: "kg",
+  });
+});
+
 app.listen(port, () => console.log(`Server listening on port ${port}`));
+
+export default app;
